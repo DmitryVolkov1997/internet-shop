@@ -1,0 +1,9 @@
+.item {
+	@apply text-dark-gray;
+
+	> a {
+		&:hover {
+			@apply text-violet transition-colors delay-150;
+		}
+	}
+}

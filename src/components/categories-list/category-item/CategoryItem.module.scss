@@ -1,0 +1,11 @@
+.item {
+	@apply max-w-[230px];
+
+	> .img {
+		@apply w-full h-[230px];
+	}
+
+	> .name {
+		@apply text-center mt-5 font-semibold;
+	}
+}

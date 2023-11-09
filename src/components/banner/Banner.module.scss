@@ -1,0 +1,61 @@
+.banner {
+	@apply bg-dark-primary my-16;
+
+	.year,
+	.sale {
+		@apply text-dark-violet font-light;
+	}
+
+	.year {
+		@apply text-7xl;
+	}
+
+	.sale {
+		@apply text-[150px] leading-[130px] my-8;
+	}
+
+	.left {
+		@apply flex flex-col items-center justify-center w-2/4 relative;
+
+		&:before,
+		&:after {
+			position: absolute;
+			content: '';
+			z-index: 10;
+		}
+
+		&:before {
+			bottom: 40px;
+			left: -25px;
+			background-image: url('/images/banner/image-1.png');
+			width: 204px;
+			height: 170px;
+		}
+
+		&:after {
+			bottom: -25px;
+			right: -25px;
+			background-image: url('/images/banner/image-2.png');
+			width: 269px;
+			height: 151px;
+		}
+	}
+
+	.right {
+		@apply w-2/4 relative;
+	}
+
+	.right {
+		> .img {
+			@apply w-full;
+		}
+	}
+
+	.text {
+		@apply absolute bottom-5 left-auto right-auto w-full z-10 text-dark-primary text-center;
+
+		> span {
+			@apply text-xl text-dark-violet font-bold;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.layout {
+	@apply flex flex-col min-h-screen;
+
+	> .main {
+		@apply flex justify-center;
+	}
+
+	> .profile {
+		@apply invisible opacity-0 transition-all delay-150 -right-[320px];
+	}
+
+	> .profile.isShowDrawer {
+		@apply visible opacity-100 -right-[0];
+	}
+}

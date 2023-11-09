@@ -1,0 +1,15 @@
+.profile {
+	@apply flex items-center gap-x-3 text-gray;
+
+	> .logo {
+		@apply w-10 h-10 flex items-center justify-center bg-dark-primary rounded-full;
+
+		> .photo {
+			@apply rounded-full;
+		}
+	}
+
+	.link {
+		@apply block;
+	}
+}

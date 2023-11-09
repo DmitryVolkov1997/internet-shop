@@ -1,0 +1,24 @@
+.categories {
+	@apply bg-dark-primary p-6 rounded-md flex flex-col justify-start items-start mb-10 h-[430px];
+
+	> .title {
+		@apply mb-4 text-xl uppercase font-medium;
+	}
+
+	> .list {
+		@apply flex flex-col gap-y-3 grow;
+	}
+
+	> .spinner {
+		@apply w-full flex ml-12;
+	}
+
+	> .row {
+		@apply flex justify-between items-center w-full;
+	}
+
+	.support,
+	.terms {
+		@apply hover:underline;
+	}
+}

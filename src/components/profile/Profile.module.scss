@@ -1,0 +1,15 @@
+.profile {
+	@apply bg-dark-primary max-w-xs w-full min-h-screen fixed top-0 right-0 z-10 shadow-md flex flex-col items-center px-6;
+}
+
+.sign {
+	@apply mt-10 w-full;
+
+	> input {
+		@apply w-full mb-5;
+	}
+
+	.row {
+		@apply flex items-center justify-between;
+	}
+}

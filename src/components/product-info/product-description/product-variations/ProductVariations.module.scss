@@ -1,0 +1,15 @@
+.variations {
+	@apply flex items-center gap-x-1.5 my-4;
+
+	> .text {
+		@apply text-dark-gray mr-1;
+	}
+
+	> .btn {
+		@apply bg-primary px-3 py-1 rounded-md;
+
+		&.active {
+			@apply bg-dark-violet;
+		}
+	}
+}

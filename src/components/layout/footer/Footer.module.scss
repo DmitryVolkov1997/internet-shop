@@ -1,0 +1,10 @@
+.footer {
+	@apply h-20 flex justify-center items-center w-full;
+
+	.row {
+		@apply bg-dark-primary h-20 p-6 rounded-md flex justify-between items-center;
+	}
+
+	.text {
+	}
+}

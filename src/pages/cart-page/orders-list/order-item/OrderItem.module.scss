@@ -1,0 +1,34 @@
+.item {
+	@apply flex items-center justify-between mb-10 border-b pb-4 border-b-dark-gray;
+
+	.info {
+		@apply flex items-center gap-x-6 max-w-[410px] w-full;
+
+		> .img {
+			@apply w-36 h-20 object-cover rounded-md mb-2;
+		}
+
+		> .body {
+			> .title {
+				@apply font-semibold text-xl mb-1;
+			}
+
+			> .subtitle {
+				@apply text-gray;
+			}
+		}
+	}
+
+	> .price,
+	> .total {
+		@apply text-xl font-bold;
+	}
+
+	> .total {
+		@apply text-dark-violet;
+	}
+
+	> .delete {
+		@apply text-red-600;
+	}
+}

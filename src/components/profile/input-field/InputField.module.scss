@@ -1,0 +1,15 @@
+.label {
+	@apply w-full h-10;
+
+	> .input {
+		@apply bg-primary h-10 px-6 py-3 rounded-md w-full mb-3.5;
+
+		&.isError {
+			@apply mb-1.5;
+		}
+	}
+
+	> .error {
+		@apply text-red-600 font-medium block mb-2;
+	}
+}

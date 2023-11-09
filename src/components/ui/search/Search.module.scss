@@ -1,0 +1,19 @@
+.search {
+	@apply relative;
+
+	> input {
+		@apply bg-dark-primary px-3 py-2 h-10 text-sm text-gray rounded-lg max-w-xs w-full pl-10;
+	}
+
+	&:before {
+		position: absolute;
+		content: '';
+		top: 50%;
+		left: 10px;
+		transform: translateY(-50%);
+		width: 15px;
+		height: 15px;
+		background-image: url('../../../assets/images/search-icon.svg');
+		background-repeat: no-repeat;
+	}
+}

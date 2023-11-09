@@ -1,0 +1,35 @@
+.item {
+	@apply max-w-[230px] w-full overflow-hidden rounded-md bg-primary flex flex-col;
+
+	> .body {
+		@apply p-3 grow flex flex-col;
+	}
+
+	> .img {
+		@apply w-full object-cover h-[180px];
+	}
+
+	.title {
+		@apply font-semibold mb-1;
+	}
+
+	.subtitle {
+		@apply text-gray grow mb-4;
+	}
+
+	.bottom {
+		@apply flex justify-between items-center w-full;
+	}
+
+	.price {
+		@apply text-dark-violet font-bold text-sm flex items-center gap-x-1.5;
+
+		> .oldPrice {
+			@apply text-dark-gray text-[12px] font-medium;
+		}
+	}
+
+	.purchased {
+		@apply text-dark-gray text-[10px];
+	}
+}

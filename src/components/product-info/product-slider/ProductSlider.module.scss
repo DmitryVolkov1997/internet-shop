@@ -1,0 +1,33 @@
+.slider {
+	@apply flex gap-x-5 mr-5;
+
+	.left {
+		@apply rounded-md overflow-hidden;
+	}
+
+	.mainImg {
+		@apply max-w-[380px] h-[380px];
+	}
+
+	> .right {
+		@apply flex flex-col flex-wrap gap-y-3;
+	}
+
+	.img {
+		@apply w-[91px] h-[91px] rounded-md overflow-hidden;
+
+		&.active {
+			@apply relative;
+
+			&:before {
+				position: absolute;
+				content: '';
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(#8b57c6, 0.3);
+			}
+		}
+	}
+}

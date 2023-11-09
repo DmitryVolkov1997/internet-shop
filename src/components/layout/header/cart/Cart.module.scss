@@ -1,0 +1,22 @@
+.cart {
+	@apply flex items-center justify-end gap-x-5;
+}
+
+.basket {
+	@apply relative flex;
+
+	> .circle {
+		position: absolute;
+		bottom: -3px;
+		right: -4px;
+		width: 15px;
+		height: 15px;
+		background-color: #8b57c6;
+		border-radius: 50%;
+		color: #fff;
+		font-size: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

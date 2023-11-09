@@ -1,0 +1,12 @@
+.counter {
+	@apply flex items-center gap-x-2;
+
+	> .decrement,
+	> .increment {
+		@apply bg-dark-violet rounded-md w-7 h-7 flex justify-center items-center text-xl;
+	}
+
+	> .count {
+		@apply text-gray;
+	}
+}

@@ -1,0 +1,23 @@
+.title {
+	@apply mb-32 text-center;
+}
+
+.text {
+	@apply font-medium text-2xl my-8;
+}
+
+.row {
+	@apply flex flex-col justify-center items-center w-full;
+}
+
+.bottom {
+	@apply flex items-center justify-between;
+}
+
+.totalPrice {
+	@apply uppercase text-gray font-semibold text-xl;
+
+	> span {
+		@apply text-white;
+	}
+}

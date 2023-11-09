@@ -1,0 +1,29 @@
+.sales {
+	@apply bg-dark-primary p-6 rounded-md flex flex-col mb-10 ml-5 h-[430px];
+
+	> .title {
+		@apply text-[119px] uppercase font-extrabold text-primary/80 mb-24 leading-[120px];
+	}
+
+	> .row {
+		@apply flex justify-between -mt-20;
+	}
+
+	.body {
+		@apply max-w-[470px] w-full;
+	}
+
+	.subtitle {
+		@apply text-[#616E74] uppercase text-base mb-2;
+	}
+
+	.mainTitle {
+		@apply text-[#F6F6F7] text-5xl font-bold leading-[50px] mb-6;
+	}
+
+	.img {
+		> img {
+			@apply w-full;
+		}
+	}
+}
